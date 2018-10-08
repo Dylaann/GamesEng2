@@ -1,2 +1,3 @@
-﻿  GraphicProxy.cpp
+﻿  Practical1.cpp
+c:\users\dylmr\documents\games eng2\practical1\practical1.cpp(33): warning C4018: '<': signed/unsigned mismatch
   Practical1.vcxproj -> C:\Users\dylmr\Documents\Games Eng2\Practical1\Debug\Practical1.exe
