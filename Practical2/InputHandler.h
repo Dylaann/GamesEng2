@@ -11,7 +11,7 @@ public:
 	ButtonR_ = new ShieldCommand();
 	ButtonT_ = new MeleeCommand();
 
-	MacroCommand* macro = new MacroCommand();
+	macro = new MacroCommand();
 	macro->add(ButtonQ_);
 	macro->add(ButtonW_);
 	macro->add(ButtonE_);
@@ -24,6 +24,7 @@ public:
 	void handleInput(SDL_Event &event);
 
 private:
+	MacroCommand * macro;
 	Command* ButtonQ_;
 	Command* ButtonW_;
 	Command* ButtonE_;
@@ -32,6 +33,7 @@ private:
 	Command* ButtonA_;
 
 	std::list<Command*> m_undoList;
+	std::list<Command*> m_redoList;
 };
 
 #endif // !INPUTHANDLER
