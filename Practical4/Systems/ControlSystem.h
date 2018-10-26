@@ -3,6 +3,9 @@
 
 #include "..//Entity.h"
 
+/// <summary>
+/// Control system moves any entities attached in the direction the button is pressed.
+/// </summary>
 class ControlSystem {
 public:
 	void addEntity(Entity en);

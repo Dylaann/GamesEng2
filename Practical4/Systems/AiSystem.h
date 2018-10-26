@@ -3,6 +3,9 @@
 
 #include "..//Entity.h"
 
+/// <summary>
+/// Ai system moves Ai entities Up he screen and resets them once they are off.
+/// </summary>
 class AiSystem {
 public:
 	void addEntity(Entity en);

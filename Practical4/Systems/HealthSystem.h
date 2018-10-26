@@ -3,6 +3,9 @@
 
 #include "..//Entity.h"
 
+/// <summary>
+/// Constantly decreases entitys health.
+/// </summary>
 class HealthSystem {
 public:
 	void addEntity(Entity en);

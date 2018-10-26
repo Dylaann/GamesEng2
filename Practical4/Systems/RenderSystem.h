@@ -3,6 +3,9 @@
 
 #include "..//Entity.h"
 
+/// <summary>
+/// Draws any entites attached to the screen.
+/// </summary>
 class RenderSystem {
 public:
 	void addEntity(Entity en);

@@ -1,10 +1,17 @@
 #include "AiSystem.h"
 
+/// <summary>
+/// Adds entites to the system
+/// </summary>
+/// <param name="en"></param>
 void AiSystem::addEntity(Entity en)
 {
 	m_entityList.push_back(en);
 }
 
+/// <summary>
+/// Moves entites upwards and resets them.
+/// </summary>
 void AiSystem::update()
 {
 	for (Entity& i : m_entityList) {
@@ -27,6 +34,9 @@ void AiSystem::update()
 	}
 }
 
+/// <summary>
+/// simple boundary checking.
+/// </summary>
 void AiSystem::checkBoundary()
 {
 	if (x - 50 > 1280)

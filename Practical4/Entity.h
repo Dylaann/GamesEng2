@@ -8,6 +8,10 @@
 
 using namespace std;
 
+/// <summary>
+/// innnterface for entities.
+/// entitys shared variables
+/// </summary>
 class Entity {
 public:
 	int id;
@@ -34,23 +38,35 @@ protected:
 
 };
 
+/// <summary>
+/// player class overwrites id and color.
+/// </summary>
 class Player : public Entity {
 public:
 	Player() { id = 1; m_color = { 0, 0, 255, 255 }; };
 };
 
+/// <summary>
+/// Red class overwrites id and color.
+/// </summary>
 class Red : public Entity {
 public:
 	Red() { id = 2; m_color = { 255, 0, 0, 255 }; };
 
 };
 
+/// <summary>
+/// Green class overwrites id and color.
+/// </summary>
 class Green : public Entity {
 public:
 	Green() { id = 3; m_color = { 0, 255, 0, 255 };
 	};
 };
 
+/// <summary>
+/// Pink class overwrites id and color.
+/// </summary>
 class Pink : public Entity {
 public:
 	Pink() { id = 4; m_color = { 255, 105, 180, 255 }; };

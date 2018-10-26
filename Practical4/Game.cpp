@@ -96,6 +96,9 @@ void Game::render()
 
 }
 
+/// <summary>
+/// initialises entitys.
+/// </summary>
 void Game::initialiseEntitys()
 {
 	m_playerEntity = new Player();
@@ -104,6 +107,9 @@ void Game::initialiseEntitys()
 	m_PinkEntity = new Pink();
 }
 
+/// <summary>
+/// adds components to entitys.
+/// </summary>
 void Game::initialiseComponents()
 {
 	m_healthComponent = new HealthComponent();
@@ -130,6 +136,9 @@ void Game::initialiseComponents()
 	m_PinkEntity->addComponent(m_healthComponent);
 }
 
+/// <summary>
+/// Adds entitys to systems.
+/// </summary>
 void Game::initialiseSystems()
 {
 	m_renderSystem.addEntity(*m_redEntity);
