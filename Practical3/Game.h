@@ -6,7 +6,6 @@
 #include <SDL_image.h>
 #include <stdlib.h>
 #include <iostream>
-//#include "AnimatedSprite.h"
 #include "Player.h"
 #include "Input.h"
 
