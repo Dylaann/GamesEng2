@@ -53,7 +53,8 @@ void ControlSystem::update()
 
 				p = dynamic_cast<PositionComponent*>(j);
 			}
-			else if(j->id == 3)
+			
+			if(j->id == 3)
 			{
 				c = dynamic_cast<ControlComponent*>(j);
 

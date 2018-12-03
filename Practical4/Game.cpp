@@ -125,6 +125,7 @@ void Game::initialiseComponents()
 	m_redEntity->addComponent(m_positionComponent);
 	m_redEntity->addComponent(m_healthComponent);
 
+
 	m_positionComponent = new PositionComponent(std::pair<float, float>(600, 400));
 
 	m_GreenEntity->addComponent(m_positionComponent);

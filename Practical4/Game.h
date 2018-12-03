@@ -44,7 +44,6 @@ private:
 	HealthComponent* m_healthComponent;
 	ControlComponent* m_controlComponent;
 	PositionComponent* m_positionComponent;
-	//PositionComponent* m_redPositionComponent; //might need if i cant have 1 single posCom
 
 	HealthSystem m_healthSystem;
 	RenderSystem m_renderSystem;
