@@ -61,7 +61,7 @@ int main() {
 
 	/* Initialize customers and cheifs */
 	for (int i = 0; i < max_thread_size; i++) {
-		m_producers[i] = thread(producer, 10);
+		m_producers[i] = thread(producer, 100);
 		m_consumers[i] = thread(consumer);
 	}
 
